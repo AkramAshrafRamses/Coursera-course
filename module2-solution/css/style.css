@@ -12,7 +12,7 @@ p {
   background-color: #a7a2a4;
   height: 150px;
   margin: 15px;
-  font-family: Helvetica;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   padding: 50px;
   font-size: 9px;
@@ -29,6 +29,7 @@ p {
 
 .title1 {
 background-color: #11d684;
+font-family: Arial, Helvetica, sans-serif;
 position: absolute;
 padding: 5px;
 right: 15px;
@@ -38,7 +39,8 @@ font-size: 20px;
 
 }
 .title2 {
-background-color: #ecd212;  
+background-color: #ecd212; 
+font-family: Arial, Helvetica, sans-serif; 
 position: absolute;
 padding: 5px;
 right: 15px;
@@ -49,6 +51,7 @@ font-size: 20px;
 }
 .title3 {
 background-color: #0da0e6;  
+font-family: Arial, Helvetica, sans-serif;
 position: absolute;
 padding: 5px;
 right: 15px;
