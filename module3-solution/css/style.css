@@ -1,205 +1,96 @@
-/********** Base styles **********/
-* {
-  box-sizing:border-box;
+/** HEADER **/
+
+
+.navbar-brand  { /* Food, LLC */
+  color: #000;
+  text-transform: uppercase;
+  margin: 10px;
+  
 }
-h1 {
-  margin-bottom: 30px;
+
+.nav-item {
   text-align: center;
 }
 
-p {
-  border: 1px solid black;
-  background-color: #a7a2a4;
-  height: 150px;
-  margin: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
+#main-content{
   padding: 50px;
-  font-size: 9px;
+}
+#chicken{
+  padding: 20px;
+  margin-top: 50px;
+  border: solid 5px #11d684;
+}
+#chicken p{
   text-align: justify;
+}
+#chicken h2{
+  text-align: center;
+  background-color: #11d684;
+  color: white;
+}
 
+#beef{
+  padding: 20px;
+  margin-top: 50px;
+  border: solid 5px #ecd212;
+}
+#beef p{
+  text-align: justify;
+}
+#beef h2{
+  text-align: center;
+  background-color: #ecd212;
+  color: white;
+}
 
+#sushi{
+  padding: 20px;
+  margin-top: 50px;
+  border: solid 5px #0da0e6;
+}
+#sushi p{
+  text-align: justify;
+}
+#sushi h2{
+  text-align: center;
+  background-color: #0da0e6;
+  color: white;
 }
 
 
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
-}
-
-.title1 {
-background-color: #11d684;
-font-family: Arial, Helvetica, sans-serif;
-position: absolute;
-padding: 5px;
-right: 15px;
-top:-5px;
-border: 1px solid black;
-font-size: 20px;
-
-}
-.title2 {
-background-color: #ecd212; 
-font-family: Arial, Helvetica, sans-serif; 
-position: absolute;
-padding: 5px;
-right: 15px;
-top:-5px;
-border: 1px solid black;
-font-size: 20px;
-
-}
-.title3 {
-background-color: #0da0e6;  
-font-family: Arial, Helvetica, sans-serif;
-position: absolute;
-padding: 5px;
-right: 15px;
-top:-5px;
-border: 1px solid black;
-font-size: 20px;
-
-
+/********** Large devices only **********/
+@media (min-width: 1200px) {
 
 }
 
-
-
-/********** Desktop Version **********/
-@media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-    position: relative;
-    
-
-  }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  
+  /* End Header */
 }
 
-/********** Tablet Version **********/
+/********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float:left;
-    position: relative;
-    
-  }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-    
 
-
-  }
 }
 
-/********** Mobile Version **********/
-@media (min-width: 1px) and (max-width: 767px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
-    position: relative;
-    
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    color: black;
   }
-  .col-sm-1 {
-    width: 8.33%;
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
   }
-  .col-sm-2 {
-    width: 16.66%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  .col-sm-5 {
-    width: 41.66%;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .col-sm-7 {
-    width: 58.33%;
-  }
-  .col-sm-8 {
-    width: 66.66%;
-  }
-  .col-sm-9 {
-    width: 74.99%;
-  }
-  .col-sm-10 {
-    width: 83.33%;
-  }
-  .col-sm-11 {
-    width: 91.66%;
-  }
-  .col-sm-12 {
-    width: 100%;
-  }
+
+  
+  
+  /* End Header */
+
 }
+
