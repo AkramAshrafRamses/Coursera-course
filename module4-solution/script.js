@@ -27,11 +27,13 @@ assignment.
 WARNING!!! WARNING!!!
 */
 
+
 // STEP 1:
 // Wrap the entire contents of script.js inside of an IIFE
 // See Lecture 52, part 2
 // (Note, Step 2 will be done in the SpeakHello.js file.)
 
+(function (window) {
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
 // STEP 10:
@@ -39,7 +41,9 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // using the 'speak' method or either helloSpeaker's or byeSpeaker's
 // 'speak' method.
 // See Lecture 50, part 1
-for (/* fill in parts of the 'for' loop to loop over names array */) {
+for (var i = 0 ; i < names.length ; i++) {
+  var firstLetter = (names[i].toLowerCase()).charAt(0);
+
 
   // STEP 11:
   // Retrieve the first letter of the current name in the loop.
@@ -55,9 +59,10 @@ for (/* fill in parts of the 'for' loop to loop over names array */) {
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
-  if (/* fill in condition here */) {
-    // byeSpeaker.xxxx
+  if (firstLetter === 'j') {
+     byeSpeaker.speak(names[i]);
   } else {
-    // helloSpeaker.xxxx
+     helloSpeaker.speak(names[i]);
   }
 }
+})(window);
